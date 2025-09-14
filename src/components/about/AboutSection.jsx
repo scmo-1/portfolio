@@ -1,12 +1,14 @@
 import React from "react";
 import Image from "next/image";
+import Signature from "@/assets/signature.svg";
+import Star from "@/assets/Star.svg";
 
 function AboutSection() {
   return (
-    <section className="">
+    <section className="mt-30">
       <h2 className="text-9xl"> ABOUT.</h2>
-      <div className="flex justify-between">
-        <article className="w-1/2">
+      <div className="mt-10 flex justify-between">
+        <article className="flex w-1/2 flex-col">
           <p className="text-3xl">
             I'm a web developer who enjoys turning ideas into responsive,
             accessible, and well-structured websites. My work combines modern
@@ -24,6 +26,7 @@ function AboutSection() {
               <a href="#">IG</a>
             </li>
           </ul>
+          <Signature className="mt-auto h-30 w-50 text-orange-600" />
         </article>
         <div className="relative">
           <Image
@@ -36,7 +39,7 @@ function AboutSection() {
           <span className="absolute top-1 z-1 h-50 w-50 border-2 border-orange-600"></span>
         </div>
       </div>
-      <div className="mt-20 flex flex-col gap-5">
+      <div className="mt-30 flex flex-col gap-10">
         <h2 className="text-9xl">TOOLBOX.</h2>
         <p className="w-1/2 text-3xl">
           A selection of the technologies and tools I use to build modern web
@@ -62,6 +65,10 @@ function AboutSection() {
             <li>Git</li>
             <li>NPM</li>
           </ul>
+          <div className="ms-auto mt-20 flex gap-3 self-end">
+            <Star className="text-orange-600" />
+            <Star className="text-orange-600" />
+          </div>
         </div>
       </div>
     </section>

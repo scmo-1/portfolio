@@ -3,7 +3,7 @@ import ProjectCard from "../ui/ProjectCard";
 
 function ProjectsSection() {
   return (
-    <section className="mb-20">
+    <section className="mt-40 mb-20 flex flex-col gap-10">
       <h2 className="text-9xl">PROJECTS.</h2>
       <div className="flex w-full justify-between">
         <p className="w-1/2 text-3xl">
