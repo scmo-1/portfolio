@@ -2,7 +2,7 @@ import React from "react";
 
 function Header() {
   return (
-    <header className="flex w-full justify-between px-10 py-5">
+    <header className="fixed flex w-full justify-between px-10 py-5">
       <div>SCMO</div>
       <span>
         Based in <br /> Gävle, Sweden

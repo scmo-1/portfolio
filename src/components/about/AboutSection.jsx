@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function AboutSection() {
   return (
-    <section className="mt-50">
+    <section className="">
       <h2 className="text-9xl"> ABOUT.</h2>
       <div className="flex justify-between">
         <article className="w-1/2">
