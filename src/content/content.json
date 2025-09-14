@@ -1,0 +1,40 @@
+{
+  "about": {
+    "title": "about.",
+    "intro": "I'm a web developer who enjoys turning ideas into responsive, accessible, and well-structured websites. My work combines modernfrontend frameworks with backend know-how to deliver complete solutions.",
+    "links": [
+      {
+        "icon": "github",
+        "href": "#"
+      },
+      {
+        "icon": "linkedin",
+        "href": "#"
+      },
+      {
+        "icon": "instagram",
+        "href": "#"
+      }
+    ]
+  },
+  "toolbox": {
+    "title": "toolbox.",
+    "intro": "A selection of the technologies and tools I use to build modern web solutions.",
+    "frontend": {
+      "title": "frontend",
+      "tech": ["React", "Next.js", "TailwindCSS", "Motion"]
+    },
+    "backend": {
+      "title": "backend",
+      "tech": ["Node.js", "AWS", "MongoDB"]
+    },
+    "tools": {
+      "title": "tools",
+      "tech": ["Git", "NPM", "Figma"]
+    }
+  },
+  "projects": {
+    "title": "projects.",
+    "intro": "A few examples of projects I've built during my studies and in my free time."
+  }
+}
