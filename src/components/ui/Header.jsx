@@ -5,9 +5,9 @@ import MenuIcon from "@/assets/MenuIcon.svg";
 
 function Header() {
   return (
-    <header className="fixed flex w-full justify-between px-3 py-8 text-lg">
+    <header className="isolation-isolate fixed z-99 flex w-full justify-between px-5 py-8 text-lg backdrop-blur-sm">
       <Link href={"#"}>
-        <Logo className="text-red-500" />
+        <Logo className="text-stone-900 mix-blend-difference" />
       </Link>
       <span className="hidden lg:block">
         Based in <br /> Gävle, Sweden

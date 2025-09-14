@@ -5,11 +5,11 @@ function Toolbox() {
   return (
     <section className="mt-30 flex flex-col gap-10">
       <h2 className="text-7xl">TOOLBOX.</h2>
-      <p className="text-2xl">
+      <p className="text-2xl lg:w-1/2">
         A selection of the technologies and tools I use to build modern web
         solutions.
       </p>
-      <div className="flex flex-col">
+      <div className="flex flex-col lg:flex-row lg:gap-20">
         <ul className="text-3xl font-bold text-neutral-600">
           <h3 className="text-4xl text-stone-900">frontend</h3>
           <li>React</li>
@@ -17,7 +17,7 @@ function Toolbox() {
           <li>TailwindCSS</li>
           <li>Motion</li>
         </ul>
-        <ul className="place-items-end text-3xl font-bold text-neutral-600">
+        <ul className="place-items-end text-3xl font-bold text-neutral-600 lg:place-items-baseline">
           <h3 className="text-4xl text-stone-900">backend</h3>
           <li>Node.js</li>
           <li>AWS</li>

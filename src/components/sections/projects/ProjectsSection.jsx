@@ -3,7 +3,7 @@ import ProjectCard from "../../ui/ProjectCard";
 
 function ProjectsSection() {
   return (
-    <section className="mt-10 mb-20 flex flex-col gap-10">
+    <section className="mt-10 mb-20 flex flex-col gap-10 lg:mt-30">
       <h2 className="text-7xl">PROJECTS.</h2>
       <div className="flex w-full flex-col justify-between">
         <p className="text-2xl">
@@ -11,7 +11,7 @@ function ProjectsSection() {
           time.
         </p>
       </div>
-      <div className="grid grid-cols-1 gap-5">
+      <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
         <ProjectCard />
         <ProjectCard />
       </div>
