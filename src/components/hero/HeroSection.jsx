@@ -10,7 +10,7 @@ function HeroSection() {
           <span className="-mt-32 text-[200px]">OLSSON</span>
           <span className="text-outline -mt-15 text-9xl">Web Developer.</span>
         </h1>
-        <div className="self-end">
+        <div className="self-end text-orange-600">
           <ArrowIcon />
         </div>
       </div>
