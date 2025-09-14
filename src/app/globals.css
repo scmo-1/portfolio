@@ -3,7 +3,13 @@
 @layer utilities {
   .text-outline {
     color: transparent;
-    -webkit-text-stroke: 4px #1c1917;
+    -webkit-text-stroke: 2px #1c1917;
+  }
+  @media screen and (min-width: 1024px) {
+    .text-outline {
+      color: transparent;
+      -webkit-text-stroke: 4px #1c1917;
+    }
   }
 }
 
