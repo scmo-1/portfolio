@@ -1,17 +1,25 @@
 import React from "react";
+import Link from "next/link";
+import Logo from "@/assets/Logo.svg";
+import MenuIcon from "@/assets/MenuIcon.svg";
 
 function Header() {
   return (
-    <header className="fixed flex w-full justify-between px-10 py-5">
-      <div>SCMO</div>
-      <span>
+    <header className="fixed flex w-full justify-between px-10 py-5 text-lg">
+      <Link href={"#"}>
+        <Logo />
+      </Link>
+      <span className="hidden lg:block">
         Based in <br /> Gävle, Sweden
       </span>
-      <div className="flex flex-col">
+      <div className="hidden lg:flex lg:flex-col">
         <span>Say hello:</span>
         <a href="#">hello@scmo.dev</a>
       </div>
-      <ul className="flex flex-col gap-2 text-lg">
+      <div>
+        <MenuIcon className="lg:hidden" />
+      </div>
+      <ul className="hidden lg:flex lg:flex-col lg:gap-2 lg:text-xl">
         <li>
           <a href="#">About</a>
         </li>
