@@ -7,6 +7,7 @@ function AboutSection() {
   return (
     <section className="mt-30 lg:mt-50">
       <h2 className="text-7xl"> ABOUT.</h2>
+
       <div className="relative flex flex-col lg:flex-row lg:justify-between">
         <article className="flex flex-col lg:w-1/2">
           <p className="mt-5 text-2xl">

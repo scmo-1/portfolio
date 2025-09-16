@@ -3,6 +3,7 @@ import Link from "next/link";
 import Logo from "@/assets/Logo.svg";
 import MenuIcon from "@/assets/MenuIcon.svg";
 import HoverLink from "./HoverLink";
+import { motion } from "motion/react";
 
 function Header() {
   return (
@@ -10,6 +11,7 @@ function Header() {
       <Link href={"#"}>
         <Logo className="text-stone-900 mix-blend-difference" />
       </Link>
+
       <ul className="hidden lg:flex lg:justify-center lg:gap-15 lg:text-xl">
         <li>
           <HoverLink href="#">About</HoverLink>
