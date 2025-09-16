@@ -2,6 +2,7 @@
 import { Oswald, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/ui/Header";
+import Footer from "@/components/ui/Footer";
 import { useEffect } from "react";
 import Lenis from "lenis";
 
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
