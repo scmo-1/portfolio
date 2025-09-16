@@ -9,7 +9,7 @@ function HoverLink({ href, children }) {
       <motion.div
         initial="initial"
         whileHover="hovered"
-        className="ineline-flex h-2w-fit relative items-center justify-center overflow-hidden text-xl whitespace-nowrap text-stone-900"
+        className="ineline-flex relative w-fit items-center justify-center overflow-hidden text-xl whitespace-nowrap text-stone-900"
       >
         <motion.div
           variants={{
@@ -23,7 +23,7 @@ function HoverLink({ href, children }) {
           className="absolute inset-0 flex items-center justify-center"
           variants={{
             initial: { y: "110%" },
-            hovered: { y: 0 },
+            hovered: { y: 0, color: "#ea580c" },
           }}
         >
           {children}
