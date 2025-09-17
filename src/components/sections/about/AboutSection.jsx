@@ -16,29 +16,43 @@ function AboutSection() {
             frontend frameworks with backend know-how to deliver complete
             solutions.
           </p>
-          <ul className="mt-10 flex flex-col gap-5 text-lg font-bold lg:flex-row">
-            <li>
-              <a href="#">LinkedIn</a>
-            </li>
-            <li>
-              <a href="#">Github</a>
-            </li>
-            <li>
-              <a href="#">Instagram</a>
-            </li>
-          </ul>
+          <div className="mt-10">
+            <span className="text-2xl font-bold">Get in touch</span>
+            <ul className="flex flex-col gap-5 text-lg md:flex-row lg:flex-row">
+              <li>
+                <a
+                  className="text-xl transition duration-300 ease-in-out hover:text-orange-600"
+                  href="#"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  className="text-xl transition duration-300 ease-in-out hover:text-orange-600"
+                  href="#"
+                >
+                  Github
+                </a>
+              </li>
+              <li>
+                <a
+                  className="text-xl transition duration-300 ease-in-out hover:text-orange-600"
+                  href="#"
+                >
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
         </article>
-        <div className="relative mt-10 h-[280px] w-[250px] lg:right-20 lg:h-[400] lg:w-[350]">
-          <Image
-            src={"/images/portrait.png"}
-            fill
-            className="z-5"
-            alt="Portrait"
-          />
-          <span className="lg:absolute lg:top-5 lg:left-20 lg:h-100 lg:w-80 lg:border-2 lg:border-orange-600"></span>
-        </div>
-        <div className="absolute bottom-1 left-40 z-10 lg:left-0">
-          <Signature className="h-30 w-50 text-orange-600" />
+        <div className="mt-10 flex flex-col items-center">
+          <div className="relative inline-block h-[350px] w-[300px] overflow-hidden rounded-4xl border-2 border-orange-600 lg:h-[450px] lg:w-[400px]">
+            <Image src={"/images/pic.webp"} fill className="" alt="Portrait" />
+          </div>
+          <div className="">
+            <Signature className="h-30 w-50 text-orange-600" />
+          </div>
         </div>
       </div>
     </section>

@@ -13,7 +13,7 @@ const revealVariants = {
   }),
 };
 
-function Reveal({ children, delay = 0 }) {
+function Reveal({ children, delay = 0, className }) {
   return (
     <div className="overflow-hidden">
       <motion.div
@@ -22,7 +22,7 @@ function Reveal({ children, delay = 0 }) {
         initial="hidden"
         animate="show"
         transition={{ ...revealVariants.show.transition, delay }}
-        className="inline-block"
+        className={`inline-block ${className}`}
       >
         {children}
       </motion.div>

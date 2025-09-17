@@ -7,20 +7,16 @@ import Reveal from "@/components/ui/Reveal";
 function HeroSection() {
   return (
     <section className="flex h-screen w-full">
-      <div className="w-full flex-col lg:flex lg:flex-row lg:justify-between">
-        <h1 className="mt-auto flex flex-col pb-10">
+      <div className="mt-50 flex w-full flex-col lg:flex-row lg:justify-between">
+        <h1 className="flex flex-col lg:mt-auto">
           <Reveal delay={0.3}>
-            <span className="block text-8xl md:text-9xl lg:text-[200px]">
-              SIMON
-            </span>
+            <span className="text-7xl md:text-9xl lg:text-[200px]">SIMON</span>
           </Reveal>
           <Reveal delay={0.5}>
-            <span className="block text-8xl md:text-9xl lg:text-[200px]">
-              OLSSON
-            </span>
+            <span className="text-7xl md:text-9xl lg:text-[200px]">OLSSON</span>
           </Reveal>
           <Reveal delay={0.7}>
-            <span className="text-outline block py-5 text-5xl md:text-8xl lg:text-9xl">
+            <span className="text-outline -mt-5 block py-5 text-5xl md:text-8xl lg:text-9xl">
               Web Developer.
             </span>
           </Reveal>

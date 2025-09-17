@@ -3,7 +3,7 @@ import Star from "@/assets/Star.svg";
 
 function Toolbox() {
   return (
-    <section className="mt-30 flex flex-col gap-10">
+    <section className="mt-10 flex flex-col gap-10 lg:mt-1">
       <h2 className="text-7xl">TOOLBOX.</h2>
       <p className="text-2xl lg:w-1/2">
         A selection of the technologies and tools I use to build modern web
