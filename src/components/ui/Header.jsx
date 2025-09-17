@@ -9,7 +9,7 @@ function Header() {
   return (
     <header className="fixed z-99 flex w-full justify-between px-5 py-3 text-lg backdrop-blur-sm">
       <Link href={"#"}>
-        <Logo className="text-stone-900 mix-blend-difference" />
+        <Logo className="h-10 w-20 text-stone-900" />
       </Link>
 
       <ul className="hidden lg:flex lg:justify-center lg:gap-15 lg:text-xl">
@@ -29,7 +29,7 @@ function Header() {
         <HoverLink href="#">hello@scmo.dev</HoverLink>
       </div>
       <div className="lg:hidden">
-        <MenuIcon />
+        <MenuIcon className="h-10 w-10" />
       </div>
     </header>
   );
