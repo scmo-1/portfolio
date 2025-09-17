@@ -7,17 +7,26 @@ import Reveal from "@/components/ui/Reveal";
 function HeroSection() {
   return (
     <section className="flex h-screen w-full">
-      <div className="mt-50 flex w-full flex-col lg:flex-row lg:justify-between">
-        <h1 className="flex flex-col lg:mt-auto">
-          <Reveal delay={0.3}>
-            <span className="text-7xl md:text-9xl lg:text-[200px]">SIMON</span>
+      <div className="mt-40 flex w-full flex-col lg:flex-row lg:justify-between">
+        <h1 className="mt-auto flex w-full flex-col pb-5 lg:w-3/4">
+          <Reveal delay={0.2}>
+            <span className="text-8xl md:text-[150px] lg:text-[200px]">
+              SIMON
+            </span>
           </Reveal>
-          <Reveal delay={0.5}>
-            <span className="text-7xl md:text-9xl lg:text-[200px]">OLSSON</span>
+          <Reveal delay={0.4}>
+            <span className="text-8xl md:text-[150px] lg:text-[200px]">
+              OLSSON
+            </span>
           </Reveal>
-          <Reveal delay={0.7}>
-            <span className="text-outline -mt-5 block py-5 text-5xl md:text-8xl lg:text-9xl">
-              Web Developer.
+          <Reveal delay={0.6}>
+            <span className="text-outline 2xl: block text-7xl md:text-[150px] lg:text-[150px] xl:text-[180px]">
+              Web
+            </span>
+          </Reveal>
+          <Reveal delay={0.8}>
+            <span className="text-outline 2xl: block pb-8 text-7xl md:text-[150px] lg:text-[150px] xl:text-[180px]">
+              Developer.
             </span>
           </Reveal>
         </h1>
