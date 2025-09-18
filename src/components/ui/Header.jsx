@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Logo from "@/assets/Logo.svg";
 import MenuIcon from "@/assets/MenuIcon.svg";
-import HoverLink from "./HoverLink";
+import AppLink from "./AppLink";
 import { motion } from "motion/react";
 
 function Header() {
@@ -14,19 +14,19 @@ function Header() {
 
       <ul className="hidden lg:flex lg:justify-center lg:gap-15 lg:text-xl">
         <li>
-          <HoverLink href="#">About</HoverLink>
+          <AppLink href="#">About</AppLink>
         </li>
         <li>
-          <HoverLink href="#">Projects</HoverLink>
+          <AppLink href="#">Projects</AppLink>
         </li>
         <li>
-          <HoverLink href="#">Contact</HoverLink>
+          <AppLink href="#">Contact</AppLink>
         </li>
       </ul>
 
       <div className="hidden lg:flex lg:flex-col">
         <span className="text-xl">Say hello:</span>
-        <HoverLink href="#">hello@scmo.dev</HoverLink>
+        <AppLink href="#">hello@scmo.dev</AppLink>
       </div>
       <div className="lg:hidden">
         <MenuIcon className="h-10 w-10" />

@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "motion/react";
 
-function HoverLink({ href, children }) {
+function AppLink({ href, children }) {
   return (
     <Link href={"#"} className="">
       <motion.div
@@ -33,4 +33,4 @@ function HoverLink({ href, children }) {
   );
 }
 
-export default HoverLink;
+export default AppLink;

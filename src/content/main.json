@@ -4,16 +4,16 @@
     "intro": "I'm a web developer who enjoys turning ideas into responsive, accessible, and well-structured websites. My work combines modernfrontend frameworks with backend know-how to deliver complete solutions.",
     "links": [
       {
-        "icon": "github",
-        "href": "#"
+        "link": "Github",
+        "href": "https://github.com/scmo-1"
       },
       {
-        "icon": "linkedin",
-        "href": "#"
+        "link": "LinkedIn",
+        "href": "https://www.linkedin.com/in/simon-olsson-3a7208173/"
       },
       {
-        "icon": "instagram",
-        "href": "#"
+        "link": "Instagram",
+        "href": "https://www.instagram.com/sxolsson/?utm_source=ig_web_button_share_sheet"
       }
     ]
   },
@@ -33,8 +33,20 @@
       "tech": ["Git", "NPM", "Figma"]
     }
   },
-  "projects": {
+  "project": {
     "title": "projects.",
-    "intro": "A few examples of projects I've built during my studies and in my free time."
+    "intro": "A few examples of projects I've built during my studies and in my free time.",
+    "items": [
+      {
+        "slug": "p1",
+        "title": "title",
+        "src": "link"
+      },
+      {
+        "slug": "p2",
+        "title": "title",
+        "src": "link"
+      }
+    ]
   }
 }
