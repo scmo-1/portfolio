@@ -4,6 +4,7 @@ import Logo from "@/assets/Logo.svg";
 import MenuIcon from "@/assets/MenuIcon.svg";
 import AppLink from "./AppLink";
 import { motion } from "motion/react";
+import MenuButton from "./MenuButton";
 
 function Header() {
   return (
@@ -29,7 +30,7 @@ function Header() {
         <AppLink href="mailto:hello@scmo.dev">hello@scmo.dev</AppLink>
       </div>
       <div className="lg:hidden">
-        <MenuIcon className="h-10 w-10" />
+        <MenuButton />
       </div>
     </header>
   );
