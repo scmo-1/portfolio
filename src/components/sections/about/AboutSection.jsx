@@ -27,11 +27,12 @@ function AboutSection() {
 
   return (
     <motion.section
+      id="about"
       ref={ref}
       variants={container}
       initial="hidden"
       animate={isInView ? "show" : "hidden"}
-      className="mt-30 lg:mt-50"
+      className="mt-30 scroll-mt-20 lg:mt-50"
     >
       <motion.h2 variants={item} className="text-7xl">
         ABOUT.

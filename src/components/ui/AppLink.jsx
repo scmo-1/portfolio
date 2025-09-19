@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 function AppLink({ href, children }) {
   return (
-    <Link href={"#"} className="">
+    <a href={href} className="">
       <motion.div
         initial="initial"
         whileHover="hovered"
@@ -29,7 +29,7 @@ function AppLink({ href, children }) {
           {children}
         </motion.div>
       </motion.div>
-    </Link>
+    </a>
   );
 }
 

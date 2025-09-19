@@ -15,7 +15,7 @@ export default async function ProjectPage({ params }) {
         <div>
           <span className="rounded-full border-2 px-2 text-lg">Next.js</span>
         </div>
-        <div className="mt-10 flex flex-col md:flex-row md:gap-10">
+        <div className="mt-10 flex flex-col gap-5 md:flex-row md:gap-10">
           <ExternalLink>Github</ExternalLink>
           <ExternalLink>Live Site</ExternalLink>
         </div>

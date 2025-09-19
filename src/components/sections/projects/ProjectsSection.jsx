@@ -14,6 +14,7 @@ function ProjectsSection() {
   };
   return (
     <motion.section
+      id="projects"
       ref={ref}
       variants={animate}
       initial="hidden"
@@ -21,7 +22,7 @@ function ProjectsSection() {
       transition={{
         duration: 1.2,
       }}
-      className="mt-10 mb-20 flex flex-col gap-10 lg:mt-60"
+      className="mt-10 mb-20 flex scroll-mt-20 flex-col gap-10 lg:mt-60"
     >
       <h2 className="text-7xl">PROJECTS.</h2>
       <div className="flex w-full flex-col justify-between">

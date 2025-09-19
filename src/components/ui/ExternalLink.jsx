@@ -3,10 +3,10 @@ import React from "react";
 import { motion } from "motion/react";
 import Arrow from "@/assets/Arrow.svg";
 
-function ExternalLink({ children, href, className }) {
+function ExternalLink({ children, href }) {
   return (
     <motion.div
-      className={`flex w-max items-center gap-3 ${className}`}
+      className={`flex w-max cursor-pointer items-center gap-3 text-2xl`}
       initial="initial"
       whileHover="hover"
     >
@@ -23,20 +23,29 @@ function ExternalLink({ children, href, className }) {
       <div className="relative inline-block overflow-hidden">
         <motion.div
           variants={{
-            initial: { y: "0" },
-            hover: { y: "100%" },
+            initial: { y: 0, x: 0 },
+            hover: {
+              x: "120%",
+              y: "-120%",
+              transition: { ease: "easeInOut" },
+            },
           }}
+          className=""
         >
-          <Arrow className="h-3 w-3 stroke-8 text-stone-900" />
+          <Arrow className="h-3 w-3 rotate-90 stroke-3 text-stone-900" />
         </motion.div>
         <motion.div
           variants={{
-            initial: { y: "-100%" },
-            hover: { y: 0 },
+            initial: {
+              x: "-120%",
+              y: "120%",
+              transition: { ease: "easeInOut" },
+            },
+            hover: { y: 0, x: 0 },
           }}
           className="absolute inset-0"
         >
-          <Arrow className="h-3 w-3 stroke-8 text-stone-900" />
+          <Arrow className="h-3 w-3 rotate-90 stroke-3 text-stone-900" />
         </motion.div>
       </div>
     </motion.div>

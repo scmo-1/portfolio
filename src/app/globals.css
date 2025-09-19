@@ -12,7 +12,9 @@
     }
   }
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--font-bricolage);
   background-color: #d6d3d1;
