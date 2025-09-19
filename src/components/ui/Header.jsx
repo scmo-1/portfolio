@@ -26,7 +26,7 @@ function Header() {
 
       <div className="hidden lg:flex lg:flex-col">
         <span className="text-xl">Say hello:</span>
-        <AppLink href="#">hello@scmo.dev</AppLink>
+        <AppLink href="mailto:hello@scmo.dev">hello@scmo.dev</AppLink>
       </div>
       <div className="lg:hidden">
         <MenuIcon className="h-10 w-10" />

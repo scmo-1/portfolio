@@ -7,13 +7,17 @@ export default async function ProjectPage({ params }) {
   const content = projects.find((p) => p.id === slug);
 
   return (
-    <section className="p-auto flex flex-col items-center pt-40 pb-20">
-      <div className="flex w-full max-w-screen-2xl flex-col gap-5 px-5 md:px-10">
+    <section className="p-auto mb-200 flex flex-col items-center px-5 pt-40 pb-10 md:px-10">
+      <div className="flex w-full max-w-screen-2xl flex-col gap-5">
         <h1 className="text-6xl">{content.title}</h1>
         <ul>
           <li>Status: {content.status}</li>
           <li>Year: {content.year}</li>
         </ul>
+        <div className="flex gap-10">
+          <ExternalLink>Github</ExternalLink>
+          <ExternalLink>Live Site</ExternalLink>
+        </div>
         <p className="text-xl lg:w-1/2">{content.description}</p>
         <ul className="flex flex-wrap gap-1">
           {content.tags.map((tag, idx) => (
@@ -22,8 +26,9 @@ export default async function ProjectPage({ params }) {
             </li>
           ))}
         </ul>
+
         <div>
-          <h2 className="mb-2"> Features:</h2>
+          <h2 className="mb-2 text-xl"> Features:</h2>
           <ul className="">
             {content.features.map((feat, idx) => (
               <li key={idx} className="border-b-1 border-neutral-500">
@@ -32,25 +37,24 @@ export default async function ProjectPage({ params }) {
             ))}
           </ul>
         </div>
-        <p> Role: {content.role}</p>
         <div>
-          <h3>What I've learned</h3>
-          <p>{content.learning_outcomes}</p>
+          <h2 className="text-xl">Role</h2>
+          <p> {content.role}</p>
         </div>
-        <div className="mt-5 flex flex-col gap-5 md:flex-row md:gap-10">
-          <ExternalLink>Github</ExternalLink>
-          <ExternalLink>Live Site</ExternalLink>
+        <div>
+          <h3 className="text-xl">What I've learned</h3>
+          <p>{content.learning_outcomes}</p>
         </div>
       </div>
     </section>
   );
 }
 
-//  <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl md:aspect-[16/10]">
-//             <Image
-//               src={"/images/placeholder.png"}
-//               alt="product"
-//               fill
-//               className="object-cover"
-//             />
-//           </div>
+/* <div className="relative mb-5 aspect-[1/2] w-1/2 overflow-hidden rounded-xl">
+          <Image
+            src={content.image02}
+            alt={`Image of ${content.title}`}
+            fill
+            className="object-fit"
+          />
+        </div> */
