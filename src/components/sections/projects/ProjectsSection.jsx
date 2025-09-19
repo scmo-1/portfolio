@@ -4,7 +4,7 @@ import ProjectCard from "../../ui/ProjectCard";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
 
-function ProjectsSection() {
+function ProjectsSection({ content }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
@@ -22,18 +22,21 @@ function ProjectsSection() {
       transition={{
         duration: 1.2,
       }}
-      className="mt-10 mb-20 flex scroll-mt-20 flex-col gap-10 lg:mt-60"
+      className="mt-10 mb-50 flex scroll-mt-20 flex-col gap-10 lg:mt-60"
     >
-      <h2 className="text-7xl">PROJECTS.</h2>
+      <h2 className="text-7xl uppercase">{content.title}</h2>
       <div className="flex w-full flex-col justify-between">
-        <p className="text-2xl lg:w-1/2">
-          A few examples of projects I've built during my studies and in my free
-          time.
-        </p>
+        <p className="text-2xl lg:w-1/2">{content.intro}</p>
       </div>
       <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
-        <ProjectCard />
-        <ProjectCard />
+        {content.items.map((item, idx) => (
+          <ProjectCard
+            key={idx}
+            title={item.title}
+            href={item.href}
+            image={item.image}
+          />
+        ))}
       </div>
     </motion.section>
   );

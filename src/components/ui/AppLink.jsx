@@ -3,13 +3,17 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "motion/react";
 
-function AppLink({ href, children }) {
+function AppLink({ href, children, color = "dark" }) {
+  const colors = {
+    dark: "text-stone-900",
+    light: "text-stone-300",
+  };
   return (
     <a href={href} className="">
       <motion.div
         initial="initial"
         whileHover="hovered"
-        className="ineline-flex relative w-fit items-center justify-center overflow-hidden text-xl whitespace-nowrap text-stone-900"
+        className={`relative w-fit items-center justify-center overflow-hidden text-xl whitespace-nowrap ${colors[color]}`}
       >
         <motion.div
           variants={{

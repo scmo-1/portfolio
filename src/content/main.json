@@ -39,22 +39,22 @@
     "items": [
       {
         "title": "Where it's @",
-        "src": "/projects/whereitsat",
+        "href": "/projects/whereitsat",
         "image": "/images/whereItsAt/01.webp"
       },
       {
         "title": "Trygg.es",
-        "src": "/projects/trygg",
+        "href": "/projects/trygg",
         "image": "/images/placeholder.png"
       },
       {
         "title": "Airbean API",
-        "src": "/projects/airbean",
+        "href": "/projects/airbean",
         "image": "/images/Airbean/01.webp"
       },
       {
         "title": "Portfolio",
-        "src": "/projects/myportfolio",
+        "href": "/projects/myportfolio",
         "image": "/images/portfolio/01.webp"
       }
     ]

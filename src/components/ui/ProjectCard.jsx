@@ -5,12 +5,12 @@ import Link from "next/link";
 import { motion } from "motion/react";
 import { useState } from "react";
 
-function ProjectCard({ content }) {
+function ProjectCard({ title, href, image }) {
   const [hover, setHover] = useState(false);
 
   return (
     <Link
-      href={"#"}
+      href={href}
       className={`relative`}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
@@ -22,21 +22,21 @@ function ProjectCard({ content }) {
             initial={{ y: 0 }}
             animate={hover ? { y: "100%" } : { y: 0 }}
             transition={{ ease: "easeOut" }}
-            className="text-5xl"
+            className="p-2 text-5xl"
           >
-            Title
+            {title}
           </motion.div>
           <motion.div
             initial={{ y: "-100%" }}
             animate={hover ? { y: 0 } : { y: "-100%" }}
             transition={{ ease: "easeOut" }}
-            className="absolute inset-0 flex text-5xl"
+            className="absolute inset-0 flex p-2 text-5xl"
           >
-            Title
+            {title}
           </motion.div>
         </motion.h4>
 
-        <div className="relative overflow-hidden rounded-2xl">
+        <div className="relative overflow-hidden rounded-2xl bg-stone-900">
           <motion.span
             whileHover={{
               scale: 0.95,
@@ -54,7 +54,7 @@ function ProjectCard({ content }) {
             initial={{ filter: "blur(0px)", scale: 1 }}
             animate={
               hover
-                ? { filter: "blur(3px)", scale: 1.2 }
+                ? { filter: "blur(3px)", scale: 1.1 }
                 : { filter: "blur(0px)" }
             }
             transition={{
@@ -63,12 +63,7 @@ function ProjectCard({ content }) {
             }}
             className="relative aspect-[8/5] w-full overflow-hidden"
           >
-            <Image
-              src={"/images/placeholder.png"}
-              fill
-              alt="Project"
-              className="object-cover"
-            />
+            <Image src={image} fill alt={title} className="object-cover" />
           </motion.div>
         </div>
       </div>

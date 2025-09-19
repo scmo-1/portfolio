@@ -2,10 +2,11 @@
 import React from "react";
 import Image from "next/image";
 import Signature from "@/assets/signature.svg";
+import ExternalLink from "@/components/ui/ExternalLink";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
 
-function AboutSection() {
+function AboutSection({ content }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
@@ -34,45 +35,21 @@ function AboutSection() {
       animate={isInView ? "show" : "hidden"}
       className="mt-30 scroll-mt-20 lg:mt-50"
     >
-      <motion.h2 variants={item} className="text-7xl">
-        ABOUT.
+      <motion.h2 variants={item} className="text-7xl uppercase">
+        {content.title}
       </motion.h2>
 
       <div className="relative flex flex-col lg:flex-row lg:justify-between">
         <motion.article variants={item} className="flex flex-col lg:w-1/2">
-          <p className="mt-5 text-2xl">
-            I'm a web developer who enjoys turning ideas into responsive,
-            accessible, and well-structured websites. My work combines modern
-            frontend frameworks with backend know-how to deliver complete
-            solutions.
-          </p>
+          <p className="mt-5 text-2xl">{content.intro}</p>
           <div className="mt-10">
             <span className="text-2xl font-bold">Get in touch</span>
             <ul className="flex flex-col gap-5 text-lg md:flex-row lg:flex-row">
-              <li>
-                <a
-                  className="text-xl transition duration-300 ease-in-out hover:text-orange-600"
-                  href="#"
-                >
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-xl transition duration-300 ease-in-out hover:text-orange-600"
-                  href="#"
-                >
-                  Github
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-xl transition duration-300 ease-in-out hover:text-orange-600"
-                  href="#"
-                >
-                  Instagram
-                </a>
-              </li>
+              {content.links.map((a, idx) => (
+                <ExternalLink key={idx} href={a.href}>
+                  {a.link}
+                </ExternalLink>
+              ))}
             </ul>
           </div>
         </motion.article>
