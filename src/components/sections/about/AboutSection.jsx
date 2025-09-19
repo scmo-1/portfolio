@@ -81,7 +81,7 @@ function AboutSection() {
           className="mt-10 flex flex-col items-center"
         >
           <div className="relative inline-block h-[350px] w-[300px] overflow-hidden rounded-4xl border-2 border-orange-600 lg:h-[450px] lg:w-[400px]">
-            <Image src={"/images/pic.webp"} fill className="" alt="Portrait" />
+            <Image src={"/images/pic.webp"} fill alt="Portrait" />
           </div>
           <div className="">
             <Signature className="h-30 w-50 text-orange-600" />

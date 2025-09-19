@@ -23,7 +23,7 @@ function AppLink({ href, children }) {
           className="absolute inset-0 flex items-center justify-center"
           variants={{
             initial: { y: "110%" },
-            hovered: { y: 0, color: "#ea580c" },
+            hovered: { y: 0 },
           }}
         >
           {children}

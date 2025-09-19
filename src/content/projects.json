@@ -1,0 +1,88 @@
+[
+  {
+    "id": "trygg",
+    "title": "Trygg.es",
+    "description": "A static website built for a small keyholding and home service company in Spain, showcasing services, pricing, and contact information.",
+    "tags": ["Next.js", "React", "Tailwind", "Motion", "Figma"],
+    "features": [
+      "Clear presentation of services and pricing",
+      "Responsive design for all devices",
+      "Custom design and copywriting"
+    ],
+    "role": "Designed in Figma, wrote all copy, and implemented the site using Next.js, React, and Tailwind",
+    "learning_outcomes": "Learned how to translate a company's brand and values into a functional website, adapting design and tone to suit the client and their audience.",
+    "repo": "https://github.com/scmo-1/TryggHemservice.git",
+    "live": "https://trygg.es",
+    "status": "Live",
+    "year": 2025,
+    "image01": "/images/placeholder.png",
+    "image02": "/images/placeholder.png",
+    "image03": "/images/placeholder.png"
+  },
+  {
+    "id": "whereitsat",
+    "title": "Where it's @",
+    "description": "A mobile-first React app built as a school project, showcasing local music events. The task was to implement a Figma design with pixel-perfect accuracy while adding custom touches like a dynamic menu.",
+    "tags": ["React", "Zustand", "Material UI", "Motion"],
+    "features": [
+      "Mobile-first design",
+      "Dynamic event listings fetched from an API",
+      "Ticket generation with unique 5-character IDs",
+      "Smooth animations with Motion",
+      "Modular component structure following best practices"
+    ],
+    "role": "Implemented the frontend from a Figma mockup, handled state management with Zustand, integrated Material UI and external libraries, and ensured pixel-perfect mobile UI.",
+    "learning_outcomes": "Learned to translate detailed designs into responsive React components, manage complex state with Zustand, and integrate third-party libraries to enhance functionality and user experience.",
+    "repo": "https://github.com/scmo-1/where-its-at.git",
+    "live": null,
+    "status": "Completed",
+    "year": 2025,
+    "image01": "/images/whereItsAt/01.webp",
+    "image02": "/images/whereItsAt/02.webp",
+    "image03": "/images/whereItsAt/03.webp"
+  },
+  {
+    "id": "airbean",
+    "title": "Airbean API",
+    "description": "A school project where the first part involved building a backend REST API for a futuristic coffee delivery service as a group, followed by an individual extension creating protected admin endpoints for menu management.",
+    "tags": ["Node.js", "Express", "MongoDB", "REST API", "Swagger"],
+    "features": [
+      "Full CRUD operations for menu and orders",
+      "User account creation and login with unique IDs",
+      "Protected admin endpoints for adding, updating, and deleting menu items",
+      "Input validation and detailed error handling",
+      "Swagger documentation for all endpoints",
+      "Experience working in an agile workflow with GitHub Projects"
+    ],
+    "role": "Contributed to building the initial group API and independently implemented admin endpoints with secure access, input validation, and Swagger documentation.",
+    "learning_outcomes": "Gained experience in backend development, RESTful API design, database management with MongoDB, and agile teamwork practices. Learned to implement authentication, role-based access control, and documentation for APIs.",
+    "repo": "https://github.com/scmo-1/Airbean_restAPI.git",
+    "live": null,
+    "status": "Completed",
+    "year": 2025,
+    "image01": "/images/Airbean/01.webp",
+    "image02": "/images/Airbean/02.webp",
+    "image03": "/images/Airbean/03.webp"
+  },
+  {
+    "id": "myportfolio",
+    "title": "Personal Portfolio",
+    "description": "My own portfolio website built to showcase projects and skills, designed with a personal aesthetic while exploring advanced React techniques and animations with Motion.",
+    "tags": ["Next.js", "React", "Tailwind CSS", "Motion"],
+    "features": [
+      "Custom design and layout created from scratch",
+      "Smooth animations and transitions using Motion",
+      "Responsive design for all devices",
+      "Dynamic project rendering from JSON data"
+    ],
+    "role": "Responsible for the full design and development of the site, focusing on user experience, responsive layout, and implementing smooth animations with Motion.",
+    "learning_outcomes": "Enhanced my skills in React, Next.js, Tailwind CSS, and animation with Motion, while practicing translating design ideas into functional web components.",
+    "repo": "https://github.com/scmo-1/portfolio.git",
+    "live": "",
+    "status": "Live",
+    "year": 2025,
+    "image01": "/images/portfolio/01.webp",
+    "image02": "/images/placeholder.png",
+    "image03": "/images/placeholder.png"
+  }
+]

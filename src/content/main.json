@@ -38,14 +38,24 @@
     "intro": "A few examples of projects I've built during my studies and in my free time.",
     "items": [
       {
-        "slug": "p1",
-        "title": "title",
-        "src": "link"
+        "title": "Where it's @",
+        "src": "/projects/whereitsat",
+        "image": "/images/whereItsAt/01.webp"
       },
       {
-        "slug": "p2",
-        "title": "title",
-        "src": "link"
+        "title": "Trygg.es",
+        "src": "/projects/trygg",
+        "image": "/images/placeholder.png"
+      },
+      {
+        "title": "Airbean API",
+        "src": "/projects/airbean",
+        "image": "/images/Airbean/01.webp"
+      },
+      {
+        "title": "Portfolio",
+        "src": "/projects/myportfolio",
+        "image": "/images/portfolio/01.webp"
       }
     ]
   }
