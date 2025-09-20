@@ -14,20 +14,24 @@ function Menu({ open, setOpen }) {
   };
 
   const item = {
-    hidden: { opacity: 0, x: 50 },
-    show: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, y: -50 },
+    show: { opacity: 1, y: 0 },
   };
   return (
     <motion.div
       initial={{
-        x: "100%",
-        borderTopLeftRadius: 400,
+        y: "-100%",
+        borderBottomRightRadius: 400,
         borderBottomLeftRadius: 400,
       }}
       animate={
         open
-          ? { x: 0, borderTopLeftRadius: 100, borderBottomLeftRadius: 100 }
-          : { x: "100%", borderTopLeftRadius: 400, borderBottomLeftRadius: 400 }
+          ? { y: 0, borderBottomRightRadius: 30, borderBottomLeftRadius: 30 }
+          : {
+              y: "-100%",
+              borderBottomRightRadius: 400,
+              borderBottomLeftRadius: 400,
+            }
       }
       transition={{
         type: "spring",
@@ -35,9 +39,9 @@ function Menu({ open, setOpen }) {
         damping: 15,
         mass: 0.8,
       }}
-      className="absolute top-0 right-0 z-10 h-screen w-3/4 bg-orange-600 text-stone-300 md:w-2/4 lg:hidden"
+      className="absolute top-0 right-0 left-0 z-10 flex flex-col items-center bg-orange-600 text-stone-300 lg:hidden"
     >
-      <nav className="mt-30 px-5">
+      <nav className="my-10 px-5">
         <motion.ul
           className="flex flex-col gap-5 text-5xl"
           variants={container}

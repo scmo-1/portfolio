@@ -3,9 +3,8 @@ import { Oswald, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Lenis from "lenis";
-import { motion } from "motion/react";
 
 const OswaldFont = Oswald({ subsets: ["latin"], variable: "--font-oswald" });
 const BricolageFont = Bricolage_Grotesque({
