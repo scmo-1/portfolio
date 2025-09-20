@@ -7,7 +7,7 @@ export default async function ProjectPage({ params }) {
   const content = projects.find((p) => p.id === slug);
 
   return (
-    <section className="p-auto mb-200 flex flex-col items-center px-5 pt-40 pb-10 md:px-10">
+    <section className="p-auto mb-200 flex min-h-screen flex-col items-center px-5 pt-40 pb-10 md:px-10">
       <div className="flex w-full max-w-screen-2xl flex-col gap-5">
         <h1 className="text-6xl">{content.title}</h1>
         <ul>

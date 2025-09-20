@@ -5,6 +5,8 @@ import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
 import { useEffect } from "react";
 import Lenis from "lenis";
+import { motion, AnimatePresence } from "motion/react";
+import { usePathname } from "next/navigation";
 
 const OswaldFont = Oswald({ subsets: ["latin"], variable: "--font-oswald" });
 const BricolageFont = Bricolage_Grotesque({
@@ -23,6 +25,7 @@ export default function RootLayout({ children }) {
     }
     requestAnimationFrame(raf);
   }, []);
+
   return (
     <html
       lang="en"
@@ -30,7 +33,9 @@ export default function RootLayout({ children }) {
     >
       <body>
         <Header />
-        <main>{children}</main>
+
+        <motion.main>{children}</motion.main>
+
         <Footer />
       </body>
     </html>

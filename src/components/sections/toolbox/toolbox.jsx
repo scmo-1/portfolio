@@ -3,7 +3,7 @@ import Star from "@/assets/Star.svg";
 
 function Toolbox({ content }) {
   return (
-    <section className="mt-10 flex flex-col gap-10 lg:mt-1">
+    <section className="flex flex-col gap-10 lg:mt-1">
       <h2 className="text-7xl uppercase">{content.title}</h2>
       <p className="text-2xl lg:w-1/2">{content.intro}</p>
       <div className="flex flex-col lg:flex-row lg:gap-20">

@@ -6,7 +6,7 @@ import Reveal from "@/components/ui/Reveal";
 
 function HeroSection() {
   return (
-    <section className="flex h-screen w-full">
+    <section className="flex h-screen min-h-screen w-full">
       <div className="mt-40 flex w-full flex-col lg:flex-row lg:justify-between">
         <h1 className="mt-auto flex w-full flex-col pb-5 lg:w-3/4">
           <Reveal delay={0.2}>
