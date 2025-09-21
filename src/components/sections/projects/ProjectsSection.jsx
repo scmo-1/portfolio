@@ -23,7 +23,7 @@ function ProjectsSection({ content }) {
       transition={{
         duration: 1.2,
       }}
-      className="mt-30 mb-50 flex min-h-screen scroll-mt-20 flex-col gap-10 lg:mt-60"
+      className="mt-35 mb-50 flex min-h-screen scroll-mt-20 flex-col gap-10 lg:mt-60"
     >
       <h2 className="text-7xl uppercase">{content.title}</h2>
       <div className="flex w-full flex-col justify-between gap-7 lg:flex-row">

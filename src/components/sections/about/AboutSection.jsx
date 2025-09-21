@@ -34,18 +34,18 @@ function AboutSection({ content }) {
       animate={isInView ? "show" : "hidden"}
       className="mt-30 scroll-mt-20 lg:mt-50"
     >
-      <motion.h2 variants={item} className="text-7xl uppercase">
+      <motion.h2 variants={item} className="mb-5 text-7xl uppercase">
         {content.title}
       </motion.h2>
 
       <div className="relative flex flex-col lg:flex-row lg:justify-between">
         <motion.article variants={item} className="flex flex-col lg:w-1/2">
           <p className="mt-5 text-2xl">{content.intro}</p>
-          <div className="mt-10">
+          <div className="mt-10 flex flex-col gap-3">
             <span className="text-2xl font-bold">Get in touch</span>
             <ul className="flex flex-col gap-5 text-lg md:flex-row lg:flex-row">
               {content.links.map((a, idx) => (
-                <ExternalLink key={idx} href={a.href}>
+                <ExternalLink key={idx} href={a.href} size="lg">
                   {a.link}
                 </ExternalLink>
               ))}
@@ -56,7 +56,7 @@ function AboutSection({ content }) {
           variants={item}
           className="mt-10 flex flex-col items-center"
         >
-          <div className="relative inline-block h-[350px] w-[300px] overflow-hidden rounded-4xl border-2 border-orange-600 lg:h-[450px] lg:w-[400px]">
+          <div className="relative mt-5 inline-block h-[350px] w-[300px] overflow-hidden rounded-4xl border-2 border-orange-600 lg:mt-0 lg:h-[450px] lg:w-[400px]">
             <Image src={"/images/pic.webp"} fill alt="Portrait" />
           </div>
           <div className="">
