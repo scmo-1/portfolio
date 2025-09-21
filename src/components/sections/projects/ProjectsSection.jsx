@@ -28,7 +28,12 @@ function ProjectsSection({ content }) {
       <h2 className="text-7xl uppercase">{content.title}</h2>
       <div className="flex w-full flex-col justify-between gap-7 lg:flex-row">
         <p className="text-2xl lg:w-1/2">{content.intro}</p>
-        <ExternalLink size="lg">{content.link}</ExternalLink>
+        <ExternalLink
+          href={"https://github.com/scmo-1?tab=repositories"}
+          size="lg"
+        >
+          {content.link}
+        </ExternalLink>
       </div>
       <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
         {content.items.map((item, idx) => (

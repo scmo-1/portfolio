@@ -28,8 +28,14 @@ export default async function ProjectPage({ params }) {
             ))}
           </ul>
           <div className="mt-4 flex gap-10 lg:self-end">
-            <ExternalLink>Github</ExternalLink>
-            <ExternalLink>Live Site</ExternalLink>
+            <ExternalLink href={content.repo} size="lg">
+              Github
+            </ExternalLink>
+            {content.live && (
+              <ExternalLink href={content.live} size="lg">
+                Live site
+              </ExternalLink>
+            )}
           </div>
         </div>
       </article>
