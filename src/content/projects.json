@@ -15,9 +15,7 @@
     "live": "https://trygg.es",
     "status": "Live",
     "year": 2025,
-    "image01": "/images/placeholder.png",
-    "image02": "/images/placeholder.png",
-    "image03": "/images/placeholder.png"
+    "image": "/images/Trygg.webp"
   },
   {
     "id": "whereitsat",
@@ -37,9 +35,7 @@
     "live": null,
     "status": "Completed",
     "year": 2025,
-    "image01": "/images/whereItsAt/01.webp",
-    "image02": "/images/whereItsAt/02.webp",
-    "image03": "/images/whereItsAt/03.webp"
+    "image": "/images/WhereItsAt.webp"
   },
   {
     "id": "airbean",
@@ -60,9 +56,7 @@
     "live": null,
     "status": "Completed",
     "year": 2025,
-    "image01": "/images/Airbean/01.webp",
-    "image02": "/images/Airbean/02.webp",
-    "image03": "/images/Airbean/03.webp"
+    "image": "/images/Airbean.webp"
   },
   {
     "id": "myportfolio",
@@ -81,8 +75,6 @@
     "live": "",
     "status": "Live",
     "year": 2025,
-    "image01": "/images/portfolio/01.webp",
-    "image02": "/images/placeholder.png",
-    "image03": "/images/placeholder.png"
+    "image": "/images/Portfolio.webp"
   }
 ]
