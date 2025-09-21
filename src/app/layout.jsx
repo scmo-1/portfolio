@@ -3,7 +3,7 @@ import { Oswald, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Lenis from "lenis";
 import { usePathname } from "next/navigation";
 
@@ -15,27 +15,37 @@ const BricolageFont = Bricolage_Grotesque({
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
+  const lenisRef = useRef(null);
+
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.4,
+      smooth: true,
     });
+    lenisRef.current = lenis;
+
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
     requestAnimationFrame(raf);
-    lenis.scrollTo(0);
   }, []);
 
   useEffect(() => {
-    if (window.location.hash) {
-      const id = window.location.hash.substring(1);
-      const el = document.getElementById(id);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
-      }
-    } else {
-      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    if (lenisRef.current) {
+      lenisRef.current.scrollTo(0, { immediate: true });
+    }
+
+    const hash = window.location.hash;
+    if (hash) {
+      const id = hash.substring(1);
+
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 50);
     }
   }, [pathname]);
 
@@ -46,7 +56,7 @@ export default function RootLayout({ children }) {
     >
       <body>
         <Header />
-        <main>{children}</main>
+        <main key={pathname}>{children}</main>
         <Footer />
       </body>
     </html>
