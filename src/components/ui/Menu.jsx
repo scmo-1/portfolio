@@ -58,11 +58,6 @@ function Menu({ open, setOpen }) {
               Projects
             </a>
           </motion.li>
-          <motion.li variants={item}>
-            <a onClick={() => setOpen(false)} href="/#contact">
-              Contact
-            </a>
-          </motion.li>
         </motion.ul>
         <motion.div
           className="mt-10 flex flex-col gap-5 text-xl"
@@ -70,16 +65,22 @@ function Menu({ open, setOpen }) {
           initial="hidden"
           animate={open ? "show" : "hidden"}
         >
-          <motion.a variants={item} href="">
+          <motion.a variants={item} href="mailto:hello@scmo.dev">
             hello@scmo.dev
           </motion.a>
-          <motion.a variants={item} href="">
+          <motion.a variants={item} href="https://github.com/scmo-1">
             Github
           </motion.a>
-          <motion.a variants={item} href="">
+          <motion.a
+            variants={item}
+            href="https://www.linkedin.com/in/simon-olsson-3a7208173/"
+          >
             LinkedIn
           </motion.a>
-          <motion.a variants={item} href="">
+          <motion.a
+            variants={item}
+            href="https://www.instagram.com/sxolsson/?utm_source=ig_web_button_share_sheet"
+          >
             Instagram
           </motion.a>
         </motion.div>

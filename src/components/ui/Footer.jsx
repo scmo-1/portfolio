@@ -12,7 +12,7 @@ function Footer() {
           I'm always happy to connect and hear from people. Feel free to reach
           out for any questions or just to say hello.
         </h5>
-        <div className="my-10 flex flex-col justify-between lg:flex-row">
+        <div className="my-10 flex flex-col justify-between gap-5 lg:flex-row">
           <ul className="flex flex-col gap-5">
             <li>
               <ExternalLink href={"mailto:hello@scmo.dev"} color="light">
