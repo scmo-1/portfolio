@@ -9,7 +9,7 @@
       "Responsive design for all devices",
       "Custom design and copywriting"
     ],
-    "role": "Designed in Figma, wrote all copy, and implemented the site using Next.js, React, and Tailwind",
+    "process": "Created the visual design in Figma, crafted the website copy, and developed the site with Next.js, React, and Tailwind to deliver a clean and responsive presentation.",
     "learning_outcomes": "Learned how to translate a company's brand and values into a functional website, adapting design and tone to suit the client and their audience.",
     "repo": "https://github.com/scmo-1/TryggHemservice.git",
     "live": "https://trygg.es",
@@ -29,7 +29,7 @@
       "Smooth animations with Motion",
       "Modular component structure following best practices"
     ],
-    "role": "Implemented the frontend from a Figma mockup, handled state management with Zustand, integrated Material UI and external libraries, and ensured pixel-perfect mobile UI.",
+    "process": "Implemented the frontend from a Figma mockup, handled state management with Zustand, integrated Material UI and external libraries, and ensured pixel-perfect mobile UI.",
     "learning_outcomes": "Learned to translate detailed designs into responsive React components, manage complex state with Zustand, and integrate third-party libraries to enhance functionality and user experience.",
     "repo": "https://github.com/scmo-1/where-its-at.git",
     "live": null,
@@ -40,17 +40,17 @@
   {
     "id": "airbean",
     "title": "Airbean API",
-    "description": "A school project where the first part involved building a backend REST API for a futuristic coffee delivery service as a group, followed by an individual extension creating protected admin endpoints for menu management.",
+    "description": "A school project where the first part involved building a backend REST API for a fictional coffee delivery service as a group, followed by an individual extension creating protected admin endpoints for menu management.",
     "tags": ["Node.js", "Express", "MongoDB", "REST API", "Swagger"],
     "features": [
-      "Full CRUD operations for menu and orders",
-      "User account creation and login with unique IDs",
-      "Protected admin endpoints for adding, updating, and deleting menu items",
-      "Input validation and detailed error handling",
-      "Swagger documentation for all endpoints",
-      "Experience working in an agile workflow with GitHub Projects"
+      "CRUD operations for menu, orders, and accounts",
+      "User authentication with unique IDs",
+      "Admin endpoints for managing menu items",
+      "Validation and error handling",
+      "Swagger API documentation",
+      "Agile teamwork with GitHub Projects"
     ],
-    "role": "Contributed to building the initial group API and independently implemented admin endpoints with secure access, input validation, and Swagger documentation.",
+    "process": "Contributed to building the initial group API and independently implemented admin endpoints with secure access, input validation, and Swagger documentation.",
     "learning_outcomes": "Gained experience in backend development, RESTful API design, database management with MongoDB, and agile teamwork practices. Learned to implement authentication, role-based access control, and documentation for APIs.",
     "repo": "https://github.com/scmo-1/Airbean_restAPI.git",
     "live": null,
@@ -69,10 +69,10 @@
       "Responsive design for all devices",
       "Dynamic project rendering from JSON data"
     ],
-    "role": "Responsible for the full design and development of the site, focusing on user experience, responsive layout, and implementing smooth animations with Motion.",
+    "process": "Responsible for the full design and development of the site, focusing on user experience, responsive layout, and implementing smooth animations with Motion.",
     "learning_outcomes": "Enhanced my skills in React, Next.js, Tailwind CSS, and animation with Motion, while practicing translating design ideas into functional web components.",
     "repo": "https://github.com/scmo-1/portfolio.git",
-    "live": "",
+    "live": null,
     "status": "Live",
     "year": 2025,
     "image": "/images/Portfolio.webp"

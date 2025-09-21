@@ -17,7 +17,7 @@ const colors = {
 function ExternalLink({ children, href, size = "md", color = "dark" }) {
   return (
     <motion.div
-      className={`flex w-max items-center gap-3 ${sizeClasses[size]}`}
+      className={`flex w-max cursor-pointer items-center gap-3 ${sizeClasses[size]}`}
       initial="initial"
       whileHover="hover"
     >

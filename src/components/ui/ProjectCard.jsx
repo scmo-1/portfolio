@@ -22,7 +22,7 @@ function ProjectCard({ title, href, image }) {
             initial={{ y: 0 }}
             animate={hover ? { y: "100%" } : { y: 0 }}
             transition={{ ease: "easeOut" }}
-            className="p-2 text-5xl"
+            className="p-2 text-4xl"
           >
             {title}
           </motion.div>
@@ -30,7 +30,7 @@ function ProjectCard({ title, href, image }) {
             initial={{ y: "-100%" }}
             animate={hover ? { y: 0 } : { y: "-100%" }}
             transition={{ ease: "easeOut" }}
-            className="absolute inset-0 flex p-2 text-5xl"
+            className="absolute inset-0 flex p-2 text-4xl"
           >
             {title}
           </motion.div>
