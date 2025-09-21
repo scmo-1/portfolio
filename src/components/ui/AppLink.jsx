@@ -2,14 +2,26 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "motion/react";
+import { useRouter } from "next/navigation";
 
 function AppLink({ href, children, color = "dark" }) {
+  const router = useRouter();
+
+  const isHashLink = href.startsWith("#");
+
+  const handleClick = (e) => {
+    if (isHashLink) {
+      e.preventDefault();
+      router.push("/" + href);
+    }
+  };
+
   const colors = {
     dark: "text-stone-900",
     light: "text-stone-300",
   };
   return (
-    <a href={href} className="">
+    <a href={href} onClick={handleClick}>
       <motion.div
         initial="initial"
         whileHover="hovered"
