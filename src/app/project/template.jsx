@@ -7,15 +7,16 @@ function PageTransition({ children }) {
     <div className="relative">
       {/* Overlay som täcker hela skärmen */}
       <motion.div
-        initial={{ y: "-100%" }}
-        animate={{ y: ["-100%", "0%", "100%"] }}
-        exit={{ y: "100%" }}
+        initial={{ scaleY: 1 }}
+        animate={{ scaleY: 0 }}
+        exit={{ scaleY: 0 }}
         transition={{
-          duration: 1.2,
-          times: [0, 0.3, 1],
-          ease: "easeInOut",
+          type: "spring",
+          stiffness: 60,
+          damping: 15,
+          mass: 0.8,
         }}
-        className="absolute inset-0 z-50 bg-stone-900"
+        className="absolute inset-0 z-50 origin-top bg-stone-900"
       />
 
       {/* Innehåll */}
@@ -24,7 +25,7 @@ function PageTransition({ children }) {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0 }}
-        transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
+        transition={{ delay: 0.4, duration: 0.6, ease: "easeOut" }}
       >
         {children}
       </motion.div>
