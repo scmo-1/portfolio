@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import Logo from "@/assets/Logo.svg";
-import MenuIcon from "@/assets/MenuIcon.svg";
+
 import AppLink from "./AppLink";
-import { motion } from "motion/react";
+
 import MenuButton from "./MenuButton";
 import Menu from "./Menu";
 import { useState } from "react";
@@ -23,9 +23,6 @@ function Header() {
         </li>
         <li>
           <AppLink href="#projects">Projects</AppLink>
-        </li>
-        <li>
-          <AppLink href="#">Contact</AppLink>
         </li>
       </ul>
 
