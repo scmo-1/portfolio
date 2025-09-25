@@ -12,7 +12,7 @@
     "process": "Created the visual design in Figma, crafted the website copy, and developed the site with Next.js, React, and Tailwind to deliver a clean and responsive presentation.",
     "learning_outcomes": "Learned how to translate a company's brand and values into a functional website, adapting design and tone to suit the client and their audience.",
     "repo": "https://github.com/scmo-1/TryggHemservice.git",
-    "live": "https://trygg.es",
+    "live": "https://trygg-hemservice.vercel.app/se",
     "status": "Live",
     "year": 2025,
     "image": "/images/Trygg.webp"
